@@ -125,12 +125,24 @@
   color: var(--primary-color);
 }
 
+.bg-primary-color{
+  background-color: var(--primary-color);
+}
+
 .secondary-color {
   color: var(--secondary-color);
 }
 
+.bg-secondary-color{
+  background-color: var(--secondary-color);
+}
+
 .light-blue {
   color: var(--light-blue) !important;
+}
+
+.bg-light-blue{
+  background-color: var(--light-blue);
 }
 
 .section-padding {
