@@ -125,7 +125,7 @@
   color: var(--primary-color);
 }
 
-.bg-primary-color{
+.bg-primary-color {
   background-color: var(--primary-color);
 }
 
@@ -133,7 +133,7 @@
   color: var(--secondary-color);
 }
 
-.bg-secondary-color{
+.bg-secondary-color {
   background-color: var(--secondary-color);
 }
 
@@ -141,8 +141,79 @@
   color: var(--light-blue) !important;
 }
 
-.bg-light-blue{
+.bg-light-blue {
   background-color: var(--light-blue);
+}
+
+.text-azul {
+  color: var(--azul);
+}
+
+.text-sec--secondary-color {
+  color: var(--secondary-color);
+}
+
+.text-cinza {
+  color: var(--cinza);
+}
+
+.section-padding {
+  padding: 80px 10px;
+}
+
+.heading-1 {
+  font-size: 2.2rem;
+  line-height: 3rem;
+}
+
+.heading-2 {
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+}
+
+.heading-3 {
+  font-size: 1.6em;
+  line-height: 2.1rem;
+}
+
+.heading-4 {
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+}
+
+.paragraph-1 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.paragraph-2 {
+  font-size: 15px;
+  line-height: 22.5px;
+}
+
+.paragraph-3 {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.d-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-top-border {
+  border-top: 4px solid var(--secondary-color);
+}
+
+.footer-left-border {
+  border-left: 1px solid var(--secondary-color);
+  padding-left: 15px;
+}
+
+.title-bottom-border {
+  width: 60px;
+  margin-bottom: 15px;
+  border-top: 1px solid var(--secondary-color);
 }
 
 .section-padding {
