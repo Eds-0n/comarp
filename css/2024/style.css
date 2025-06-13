@@ -450,3 +450,11 @@ color: #0000000D;
 position: relative;
 top: -9vh;
 }
+
+
+/* blog */
+.card-body h5{
+  color: var(--primary-color);
+  margin-bottom: 15px;
+
+}
