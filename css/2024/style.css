@@ -177,7 +177,7 @@
 }
 
 .heading-4 {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   line-height: 1.4rem;
 }
 
@@ -253,4 +253,200 @@
 .banner-box {
   width: 100%;
   max-width: 900px;
+}
+
+
+
+/* BANNER DO ABOUT US  */
+
+/* Banner Responsivo */
+.aboutus-banner {
+  background: url("../img/aboutus/banner-about.webp") no-repeat center center/cover;
+  min-height: 300px;
+}
+
+@media (min-width: 768px) {
+  .aboutus-banner {
+      min-height: 400px;
+  }
+}
+
+.overlay-dark {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+}
+/* Banner Sobre Nós */
+.aboutus-banner {
+  background: url("../../img/aboutus/banner-about.webp") no-repeat center
+   center/cover;
+  min-height: 300px;
+}
+
+.overlay-dark{
+  height: 40vh;
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card{
+  border-radius: 0px;
+}
+
+
+.card{
+   background-color: var(--primary-color);
+}
+
+.card .card-body p{
+  font-size: 14px;
+}
+
+
+.border-rights {
+  border-right: 1px solid #ccc;
+}
+
+
+
+
+
+/* -------- Oradores -------- */
+#oradores .oradores-img img{
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+
+.membros-img img{
+    width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	object-fit: cover;
+	object-position: top;
+	margin: 0 auto;
+}
+
+#oradores p{
+    text-align: center !important;
+}
+#oradores .icon{
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	background: #fff;
+	color: #100E3A;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 15px;
+}
+#oradores .icone{
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	background: #100e3a;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 15px;
+}
+#oradores .orador-border{
+	border: #fff solid 3px;
+	height: 2px;
+	width: 40px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+#oradores .orador-border-laranja{
+	border: #f26128 solid 3px;
+	height: 2px;
+	width: 40px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+#sobre p{
+  text-align: justify;
+}
+#sobre .sobre-comarp{
+position: relative;
+}
+
+#sobre .sobre-comarp-box-one,
+#sobre .sobre-comarp-box-three{
+border: 1px solid #262262;
+width: 14vw;
+height: 28vh;
+}
+#sobre .sobre-comarp-box-one{
+position: absolute;
+top: 3rem;
+left: 0rem;
+z-index: -1;
+}
+#sobre .sobre-comarp-box-three{
+position: absolute;
+top: 0rem;
+right: 0rem;
+z-index: -1;
+}
+#sobre .sobre-comarp-box-two{
+position: relative;
+top: 2.5vh;
+margin: auto;
+width: 30vw;
+height: 30vh;
+display: flex;
+align-items: center;
+z-index: 99;
+}
+#sobre .sobre-comarp-box-two img{
+  width: 70% !important;
+}
+#sobre .comarp-icon{
+width: 35%;
+}
+#sobre .comarp-icon img{
+width: 80%;
+}
+
+.msv-box{
+min-height: 230px;
+background: linear-gradient(180deg, #100E3A 21.09%, #1E1E1E 198.35%);
+}
+
+.bg-gradiente{
+background: linear-gradient(180deg, #100E3A 21.09%, #1E1E1E 198.35%);
+color: #fff;
+}
+
+.border-rights{
+border-right: 1px solid #ccc;
+}
+
+#escopo h1{
+font-weight: 900;
+font-size: 8rem;
+color: #0000000D;
+}
+
+#escopo h4{
+position: relative;
+top: -9vh;
 }
