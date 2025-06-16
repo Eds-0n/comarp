@@ -141,6 +141,10 @@
   color: var(--light-blue) !important;
 }
 
+.section-oradores{
+  background-color: var(--primary-color);
+}
+
 .bg-light-blue {
   background-color: var(--light-blue);
 }
