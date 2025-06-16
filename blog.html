@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog - COMARP Forum</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/2024/style.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://comarpforum.com/wp-content/themes/comarp-wp/fonts/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="https://comarpforum.com/wp-content/themes/comarp-wp/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://comarpforum.com/wp-content/themes/comarp-wp/css/datatables.min.css">
+<link rel="stylesheet" href="https://comarpforum.com/wp-content/themes/comarp-wp/css/owl.carousel.min.css">
+<link rel="stylesheet" href="https://comarpforum.com/wp-content/themes/comarp-wp/css/owl.theme.default.min.css">
+<link rel="stylesheet" href="https://comarpforum.com/wp-content/themes/comarp-wp/css/cubeportfolio.min.css">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css">
+       <!-- Bootstrap CSS -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+       <!-- Font Awesome -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome/css/all.min.css">
+    
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader-bg d-none">
+        <div id="preloader" class="d-flex justify-content-center align-items-center h-100">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Carregando...</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botão para voltar ao topo -->
+    <div class="progress-wrap position-fixed bottom-0 end-0 m-3">
+        <button class="btn btn-primary rounded-circle p-3" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+   <!-- Header -->
+   <!-- Header -->
+   <header id="header"
+   class="sticky-top bsb-tpl-header-sticky bsb-tpl-header-sticky-animationX bg-white shadow-sm py-1">
+   <!-- Navbar 1 - Bootstrap Brain Component -->
+   <nav id="scrollspyNav"
+       class="navbar navbar-expand-lg bsb-tpl-bg-alabaster bsb-navbar bsb-navbar-hover bsb-navbar-caret bsb-tpl-navbar-sticky"
+       data-bsb-sticky-target="#header">
+       <div class="container">
+           <a class="navbar-brand" href="index.html">
+               <img src="./img/2024/main_comarp.webp" alt="COMARP Fórum 2025"
+                   style="width: 190px;">
+           </a>
+           <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+               data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                   class="bi bi-list" viewBox="0 0 16 16">
+                   <path fill-rule="evenodd"
+                       d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+               </svg>
+           </button>
+           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+               aria-labelledby="offcanvasNavbarLabel">
+               <div class="offcanvas-header">
+                   <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+               </div>
+               <div class="offcanvas-body">
+                   <ul class="navbar-nav justify-content-end flex-grow-1">
+                       <li class="nav-item">
+                           <a class="nav-link active poppins-semibold text-azul" href="index.html"
+                               aria-current="page">Início</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link poppins-semibold text-azul" href="about.html">Sobre nós</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link poppins-semibold text-azul" href="{{URL}}/#oradores">Oradores</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link poppins-semibold text-azul" href="{{URL}}/#painel">Painel</a>
+                       </li>
+
+                      
+
+                       <li class="nav-item dropdown" style="margin-right: 10px;">
+                           <a class="nav-link dropdown-toggle poppins-semibold text-azul" href="#" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                               Fórum
+                           </a>
+                           <ul class="dropdown-menu">
+                               <li><a class="dropdown-item poppins-semibold text-azul"
+                                       href="Forum2024.html" target="_blank">Fórum 2024</a></li>
+                               <li><a class="dropdown-item poppins-semibold text-azul"
+                                       href="Forum2023.html" target="_blank">Fórum 2023</a>
+                               </li>
+                           </ul>
+                       </li>
+
+                       <li class="nav-item">
+                           <a class="nav-link poppins-semibold text-azul" href="blog.html">Blog</a>
+                       </li>
+                       </ul>
+                   <ul class="navbar-nav justify-content-end flex-grow-1">
+
+                       <li class="nav-item" style="margin: 0 10px 10px 0;">
+                           <div class="btn bg-primary-color text-light px-4" style="background-color: var(--primary-color);">
+                               <a class="text-decoration-none text-light poppins-medium"
+                                   href="{{URL}}/#registo" >Registo</a>
+                           </div>
+                       </li>
+                       <li class="nav-item">
+                           <button class="btn text-light" style="background-color: var(--secondary-color);"><a
+                                   class="text-decoration-none text-light poppins-medium"
+                                   href="https://comarpforum.com/awards/" target="_blank">COMARP
+                                   Awards</a></button>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+   </nav>
+</header>
+
+
+
+    <!-- Banner -->
+    <section class="banner-single bg-dark text-white" style="background: url('img/aboutus/banner-about.webp') no-repeat center center/cover; height: 40vh;">
+        <div class="overlay h-100 d-flex align-items-center bg-dark bg-opacity-50">
+            <div class="container text-center py-5">
+                <h1 class="fw-bold display-4">BLOG</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 class="fw-bold display-1 text-muted opacity-25">Blog</h1>
+                <h4 class="text-orange position-relative" style="top: -5rem;">#Blog</h4>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Post 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="img/blog/1PHOTO-2024-08-01-18-40-00.webp" class="card-img-top" alt="Post 1" style="height: 220px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-calendar-alt me-2 text-muted"></i>
+                                <small class="text-muted">02.08.24</small>
+                            </div>
+                            <h5 class="card-title text-blue fw-bold">MAPUTO ACOLHE PELA SEGUNDA VEZ O FÓRUM DE COMUNICAÇÃO [...]</h5>
+                            <a href="post1.html" class="btn btn-blue mt-auto align-self-start text-white" style="background-color: var(--primary-color); padding: 2px 5px; border-radius: 2px; " >Ler mais</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Post 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="img/blog/2PHOTO-2024-07-18-10-21-52.webp" class="card-img-top" alt="Post 2" style="height: 220px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-calendar-alt me-2 text-muted"></i>
+                                <small class="text-muted">18.07.24</small>
+                            </div>
+                            <h5 class="card-title text-blue fw-bold">COMARP REALIZA WEBINAR SOBRE O FUTURO DAS RELAÇÕES PÚBLICAS [...]</h5>
+                            <a href="post2.html" class="btn btn-blue mt-auto align-self-start text-white" style="background-color: var(--primary-color); padding: 2px 5px; border-radius: 2px; ">Ler mais</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Post 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="img/blog/3PHOTO-2024-07-03-19-35-31.webp" class="card-img-top" alt="Post 3" style="height: 220px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-calendar-alt me-2 text-muted"></i>
+                                <small class="text-muted">03.07.24</small>
+                            </div>
+                            <h5 class="card-title text-blue fw-bold">CURIOSIDADES SOBRE PROFISSIONAIS DE MARKETING, COMUNICAÇÃO E [...]</h5>
+                            <a href="post3.html" class="btn btn-blue mt-auto align-self-start text-white" style="background-color: var(--primary-color); padding: 2px 5px; border-radius: 2px; ">Ler mais</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Post 4 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="img/blog/4IMG_0842.webp" class="card-img-top" alt="Post 4" style="height: 220px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-calendar-alt me-2 text-muted"></i>
+                                <small class="text-muted">20.06.24</small>
+                            </div>
+                            <h5 class="card-title text-blue fw-bold">O PAPEL DAS RELAÇÕES PÚBLICAS NAS ORGANIZAÇÕES</h5>
+                            <a href="post4.html" class="btn btn-blue mt-auto align-self-start text-white" style="background-color: var(--primary-color); padding: 2px 5px; border-radius: 2px; ">Ler mais</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Post 5 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="img/blog/5image_2023-08-03_08-26-13.webp" class="card-img-top" alt="Post 5" style="height: 220px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-calendar-alt me-2 text-muted"></i>
+                                <small class="text-muted">03.08.23</small>
+                            </div>
+                            <h5 class="card-title text-blue fw-bold">COMUNICAÇÃO INTERNA: COMO ENCORAJAR OS COLABORADORES EM SUAS [...]</h5>
+                            <a href="post5.html" class="btn btn-blue mt-auto align-self-start text-white" style="background-color: var(--primary-color); padding: 2px 5px; border-radius: 2px; ">Ler mais</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Post 6 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="img/blog/6comunicacao.webp" class="card-img-top" alt="Post 6" style="height: 220px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-calendar-alt me-2 text-muted"></i>
+                                <small class="text-muted">13.07.23</small>
+                            </div>
+                            <h5 class="card-title text-blue fw-bold">4 EXEMPLOS DE FALHAS NA COMUNICAÇÃO DAS EMPRESAS</h5>
+                            <a href="post6.html" class="btn btn-blue mt-auto align-self-start text-white"style="background-color: var(--primary-color); padding: 2px 5px; border-radius: 2px; ">Ler mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer" class="txt-light-1 bg-primary-color  ">
+        <div class="container">
+            <div class="row mb-5 border-bottom py-3">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="d-flex-column justify-content-center" style="height: 100%;">
+                        <h1 class="heading-3 text-uppercase text-light poppins-medium">INSCREVA-SE NA NOSSA
+                            NEWSLETTER
+                        </h1>
+                        <p class="text-light paragraph-2 poppins-regular">E esteja sempre a par das nossas últimas
+                            notícias
+                            e
+                            conferências.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 mt-3">
+                    <form action="{{URL}}/newsletter" method="post" style="width: 100%;">
+                        <div class="input-group mb-3 bg-white p-2 rounded-2">
+                            <input type="email" name="e-mail" class="form-control poppins-regular" style="border: none;"
+                                placeholder="O seu endereço de email" required>
+                            <input type="hidden" name="assunto"
+                                value="Nova entrada de Newsletter do site da COMARP Fórum 2025!">
+                            <button class="btn bg-primary-color text-light poppins-regular" style="background-color: var(--primary-color);" type="submit">Registar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row pb-4 ">
+                <div class="col-lg-5 col-md-12 col-sm-12 mb-5 d-flex-column">
+                    <div style="width: 85%;">
+                        <div class="mb-3">
+                            <a href="{{URL}}">
+                                <img src="./img/2024/white_comarp.webp"
+                                    style="width: 300px;" alt="">
+                            </a>
+                        </div>
+
+                        <p class="paragraph-2 text-light poppins-regular">A iniciativa visa promover a partilha de
+                            ideias,
+                            experiência, práticas e oportunidades, conectando profissionais, empresas do sector público
+                            e
+                            privado, sociedade civil e instituições académicas que actuam nas áreas de Comunicação,
+                            Marketing e RP, a nível nacional e internacional.</p>
+
+                        <div class="social d-flex mt-4 gap-3">
+                            <div>
+                                <a href="https://www.facebook.com/people/Comarp-FORUM/100088285493156/?mibextid=LQQJ4d">
+                                    <div class="bg-light rounded-5">
+                                        <i class="bi bi-facebook text-azul"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://www.linkedin.com/company/comarp-forum/">
+                                    <div class="bg-light rounded-5">
+                                        <i class="bi bi-linkedin text-azul"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://www.instagram.com/comarp_forum/">
+                                    <div class="bg-light rounded-5">
+                                        <i class="bi bi-instagram text-azul"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-5 d-flex-column">
+                    <h1 class="footer-title heading-3 text-light poppins-medium">Links Úteis</h1>
+                    <div class="title-bottom-border mb-5"></div>
+                    <div class="links d-flex-column">
+                        <div class="footer-left-border px-3 py-1 align-items-center">
+                            <a class="text-light paragraph-2 text-decoration-none" href="index.html">Início</a>
+                        </div>
+                        <div class="footer-left-border px-3 py-1 align-items-center">
+                            <a class="text-light paragraph-2 poppins-regular text-decoration-none"
+                                href="about.html">Sobre nós</a>
+                        </div>
+                        <div class="footer-left-border px-3 py-1 align-items-center">
+                            <a class="text-light paragraph-2 poppins-regular text-decoration-none"
+                                href="{{URL}}/#oradores/">Oradores</a>
+                        </div>
+                        <div class="footer-left-border px-3 py-1 align-items-center">
+                            <a class="text-light paragraph-2 poppins-regular text-decoration-none"
+                                href="{{URL}}/#painel">Painel</a>
+                        </div>
+                        <div class="footer-left-border px-3 py-1 align-items-center">
+                            <a class="text-light paragraph-2 poppins-regular text-decoration-none"
+                                href="{{URL}}/galeria">Galeria</a>
+                        </div>
+                        <div class="footer-left-border px-3 py-1 align-items-center">
+                            <a class="text-light paragraph-2 poppins-regular text-decoration-none"
+                                href="{{URL}}/contactos">Contactos</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-2 d-flex-column">
+                    <h1 class="footer-title heading-3 text-light poppins-medium">Contactos</h1>
+                    <div class="title-bottom-border mb-5"></div>
+                    <div class="links d-flex-column">
+                        <div class="d-flex justify-content-start align-items-start text-light gap-2">
+                            <i class="bi bi-geo-alt-fill" style="font-size: 22px;"></i>
+                            <p class="paragraph-2 poppins-regular">Av. Ahmed Sekou Touré nr. 1452, Maputo</p>
+                        </div>
+                        <div class="d-flex justify-content-start align-items-center text-light gap-2">
+                            <i class="bi bi-envelope-fill" style="font-size: 22px;"></i>
+                            <p class="paragraph-2"><a href="mailto:geral@comarp.co.mz"
+                                    class="text-decoration-none text-light poppins-regular">geral@comarp.co.mz</a></p>
+                        </div>
+                        <div class="d-flex justify-content-start align-items-center text-light gap-2">
+                            <i class="bi bi-telephone-fill" style="font-size: 22px;"></i>
+                            <p class="paragraph-2 poppins-regular"><a href="tel:+258842184841"
+                                    class="text-decoration-none text-light">+258
+                                    84 218 4841</a></p>
+                        </div>
+                        <div class="d-flex justify-content-start align-items-center text-light gap-2">
+                            <i class="bi bi-clock" style="font-size: 22px;"></i>
+                            <p class="paragraph-2 poppins-regular">Seg - Sexta: 08:00 - 17:00</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class=" d-flex-column align-items-center justify-content-center  mt-4 w-100">
+                    <div class="footer-top-border" style="width: 80%;"></div>
+                    <div class="p-4">
+                        <p class="paragraph-2 text-light text-center poppins-regular">&copy; <span
+                                id="ano-actual"></span>
+                            COMARP Fórum. Todos Direitos Reservados. Desenvolvido do jeito ✓ pela <a
+                                href="https://mechanical.co.mz"
+                                class="text-secondary-color text-decoration-none poppins-regular">Mechanical Tecnologia.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Scripts personalizados -->
+    <script src="js/scripts.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://comarpforum.com/wp-content/themes/comarp-wp/js/popper.min.js"></script>								
+    <script type="text/javascript" src="https://comarpforum.com/wp-content/themes/comarp-wp/js/bootstrap.min.js"></script>								
+    <script type="text/javascript" src="https://comarpforum.com/wp-content/themes/comarp-wp/js/jquery.min.js"></script>
+    <script type="text/javascript" src="https://comarpforum.com/wp-content/themes/comarp-wp/js/datatables.min.js"></script>								
+    <script type="text/javascript" src="https://comarpforum.com/wp-content/themes/comarp-wp/js/datatables.bootstrap.min.js"></script>	
+    <script type="text/javascript" src="https://comarpforum.com/wp-content/themes/comarp-wp/js/owl.carousel.min.js"></script>						
+    <script type="text/javascript" src="https://comarpforum.com/wp-content/themes/comarp-wp/js/jquery.cubeportfolio.min.js"></script>		
+    <script type="text/javascript" src="https://comarpforum.com/wp-content/themes/comarp-wp/js/cubemain.js"></script>		
+    <script type="text/javascript" src="https://comarpforum.com/wp-content/themes/comarp-wp/js/script.js"></script>	
+</div><!-- #page -->
+
+
+
+            <script>(function() {function maybePrefixUrlField () {
+            const value = this.value.trim()
+            if (value !== '' && value.indexOf('http') !== 0) {
+                this.value = 'http://' + value
+            }
+            }
+
+            const urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]')
+            for (let j = 0; j < urlFields.length; j++) {
+            urlFields[j].addEventListener('blur', maybePrefixUrlField)
+            }
+            })();</script><script src="https://comarpforum.com/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+            <script src="https://comarpforum.com/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+            <script id="wp-i18n-js-after">
+            wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+            </script>
+            <script src="https://comarpforum.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.0.6" id="swv-js"></script>
+            <script id="contact-form-7-js-translations">
+            ( function( domain, translations ) {
+                var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+                localeData[""].domain = domain;
+                wp.i18n.setLocaleData( localeData, domain );
+            } )( "contact-form-7", {"translation-revision-date":"2024-08-13 18:06:19+0000","generator":"GlotPress\/4.0.1","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n != 1;","lang":"pt"},"This contact form is placed in the wrong place.":["Este formul\u00e1rio de contacto est\u00e1 colocado no s\u00edtio errado."],"Error:":["Erro:"]}},"comment":{"reference":"includes\/js\/index.js"}} );
+            </script>
+            <script id="contact-form-7-js-before">
+            var wpcf7 = {
+                "api": {
+                    "root": "https:\/\/comarpforum.com\/wp-json\/",
+                    "namespace": "contact-form-7\/v1"
+                }
+            };
+            </script>
+            <script src="https://comarpforum.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.0.6" id="contact-form-7-js"></script>
+            <script src="https://comarpforum.com/wp-content/themes/comarp-wp/js/navigation.js?ver=1.0.0" id="comarp-wp-navigation-js"></script>
+            <script defer src="https://comarpforum.com/wp-content/plugins/mailchimp-for-wp/assets/js/forms.js?ver=4.10.3" id="mc4wp-forms-api-js"></script>
+
+</body>
+</html>
